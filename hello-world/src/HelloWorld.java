@@ -1,5 +1,16 @@
 public class HelloWorld {
+
+
     public static void main(String[] args) {
-        System.out.println("Antes era Hello World, agora é Olá Mundou, ou Olá Reseters!!");
+        int num1 = 6;
+        int num2 = 3;
+
+        System.out.println(num1 + " é maior que " + num2 + " ? " + (num1 > num2));
     }
+
 }
+
+
+
+
+
