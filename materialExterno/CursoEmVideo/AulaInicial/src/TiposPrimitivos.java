@@ -21,7 +21,7 @@ public class TiposPrimitivos {
 
         System.out.format("a sua nota é %.2f \n", nota); //faz a mesma coisa que a linha acima.
 
-        
+
 
 
 

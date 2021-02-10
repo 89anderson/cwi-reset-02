@@ -2,29 +2,25 @@ public class Aluno {
 
     private String nomeAluno;
 
-    private float notaFinal;
+    private double notaFinal;
 
-
-    private boolean situacaoFinal;
-
-    public Aluno(String nomeAluno, float notaFinal) {
+    //construtor
+    public Aluno(String nomeAluno, double notaFinal) {
         this.nomeAluno = nomeAluno;
         this.notaFinal = notaFinal;
         System.out.println("o aluno " + nomeAluno + " foi instanciado");
     }
 
+    //metodos
     public String getNomeAluno() {
-        return nomeAluno;
+        return this.nomeAluno;
     }
 
-    public float getNotaFinal() {
-        return notaFinal;
+    public double getNotaFinal() {
+        return this.notaFinal;
     }
 
-    public boolean isSituacaoFinal() {
-        if(notaFinal >= 7){
-            situacaoFinal = true;
-        }else{situacaoFinal = false;}
-        return situacaoFinal;
+    public boolean getSituacaoFinal() {
+        return this.notaFinal >= 7;
     }
 }
