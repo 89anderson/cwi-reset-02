@@ -1,17 +1,13 @@
 package exercicio.um;
 
-public class Diretor {
-    private String nomeDiretor;
-    private int idadeDiretor;
+public class Diretor extends Pessoa {
+
     private int quantidadeFilmesDirigidos;
 
-    public Diretor(String nomeDiretor, int idadeDiretor, int quantidadeFilmesDirigidos) {
-        this.nomeDiretor = nomeDiretor;
-        this.idadeDiretor = idadeDiretor;
+    public Diretor(String nome, int idade, Genero genero, int quantidadeFilmesDirigidos) {
+        super (nome, idade, genero);
         this.quantidadeFilmesDirigidos = quantidadeFilmesDirigidos;
+        }
+
     }
 
-    public String getNomeDiretor() {
-        return this.nomeDiretor;
-    }
-}
