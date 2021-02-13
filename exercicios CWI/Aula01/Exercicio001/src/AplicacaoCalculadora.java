@@ -4,10 +4,10 @@ public class AplicacaoCalculadora {
 
         Calculadora calculadora = new Calculadora();
 
-        float resultadoSoma = calculadora.soma(3,5);
-        float resultadoSubracao = calculadora.subtracao(10, 5);
-        float resultadoMultiplicacao = calculadora.multiplicacao(5, 2);
-        float resultadoDivisao = calculadora.divisao(10, 2);
+        double resultadoSoma = calculadora.soma(3,5);
+        double resultadoSubracao = calculadora.subtracao(10, 5);
+        double resultadoMultiplicacao = calculadora.multiplicacao(5, 2);
+        double resultadoDivisao = calculadora.divisao(10, 2);
 
         System.out.println(resultadoSoma);
         System.out.println(resultadoSubracao);
