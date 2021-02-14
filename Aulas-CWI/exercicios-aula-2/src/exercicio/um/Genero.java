@@ -12,6 +12,6 @@ public enum Genero {
     }
 
     public String getDescricao() {
-        return descricao;
+        return this.descricao;
     }
 }
