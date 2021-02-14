@@ -9,14 +9,15 @@ public class Imovel {
     }
 
     public Endereco getEndereco() {
-        return endereco;
+        return this.endereco;
     }
 
     public Double getValor() {
-        return valor;
+        return this.valor;
     }
 
     public String apresentacao(){
-        return "O endereço é "+this.endereco+" e o valor é R$ "+this.valor+".";
+        return "O endereço é "+this.endereco.getLogradouro()+", "+this.endereco.getNumero()+" - "
+                +this.endereco.getCidade()+" / "+this.endereco.getEstado()+" e o valor é R$ "+this.valor+".";
     }
 }

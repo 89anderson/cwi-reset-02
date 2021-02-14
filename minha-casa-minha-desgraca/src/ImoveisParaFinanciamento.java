@@ -24,7 +24,7 @@ public class ImoveisParaFinanciamento {
         // se "imovel" corresponder às regras, adicioná-lo à lista "imoveis" com o seguinte código:
         //    imoveis.add(imovel);
 
-        if(imovel.getValor() >= 50000 || imovel.getValor() <= 1000000){
+        if(imovel.getValor() >= 50000 && imovel.getValor() <= 1000000){
             imoveis.add(imovel);
         }else{
             System.out.println(" > Atenção, problema de registro! Imóveis com valor R$ "+imovel.getValor()+" não são aceitos no programa.");
@@ -43,7 +43,7 @@ public class ImoveisParaFinanciamento {
 
             // se "imovel" corresponder às regras, adicioná-lo à lista de opcoes com o seguinte código:
             //    opcoes.add(imovel);
-            if(imovel.getValor() >= valorLimite){
+            if(imovel.getValor() <= valorLimite){
                 opcoes.add(imovel);
             }
         }

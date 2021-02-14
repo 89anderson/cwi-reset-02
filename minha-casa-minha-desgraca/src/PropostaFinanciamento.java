@@ -12,13 +12,13 @@ public class PropostaFinanciamento {
 
 
     private void imprimirPropostaAprovada(){
-        System.out.println("Parabéns "+this.beneficiario+"!! O seu financiamento de "+this.prazoPagamento+
-                " meses do imóvel "+this.imovel+" foi aprovado!!! Aproveite esta dívida abusiva :D");
+        System.out.println("Parabéns "+this.beneficiario.getNome()+"!! O seu financiamento de "+this.prazoPagamento+
+                " meses do imóvel em "+this.imovel.getEndereco().getCidade()+" foi aprovado!!! Aproveite esta dívida abusiva :D");
     }
 
     private void imprimirPropostaNegada(){
-        System.out.println("Se lascou "+this.beneficiario+", seu arrombado!! O seu financiamento de "+this.prazoPagamento+
-                " meses do imóvel "+this.imovel+" foi NEGADO!!! Parece que tu está quebrado, otário! :D");
+        System.out.println("Se lascou "+this.beneficiario.getNome()+", seu arrombado!! O seu financiamento de "+this.prazoPagamento+
+                " meses do imóvel em "+this.imovel.getEndereco().getCidade()+" foi NEGADO!!! Parece que tu está quebrado, otário! :D");
     }
     /**
      * Valida a proposta de financiamento e apresenta o resultado para o cliente.
