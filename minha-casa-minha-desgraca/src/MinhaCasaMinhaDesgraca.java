@@ -24,11 +24,11 @@ public class MinhaCasaMinhaDesgraca {
             Endereco endereco4 = new Endereco("Rua da Republica", 40, "registro 4", "bairro4","Rio de Janeiro",UnidadeFederativa.RJ);
             Endereco endereco5 = new Endereco("Rua Dentadura", 550, "registro 5", "bairro5","Tubarao",UnidadeFederativa.SC);
 
-            Imovel imovelrs = new Imovel(endereco1,51000.0);
-            Imovel imovelsp = new Imovel(endereco2,60000.0);
-            Imovel imoveles = new Imovel(endereco3,30000.0);
-            Imovel imovelrj = new Imovel(endereco4,990000.0);
-            Imovel imovelsc = new Imovel(endereco5,2000001.0);
+            Apartamento imovelrs = new Apartamento(endereco1,51000.0,1);
+            Casa imovelsp = new Casa(endereco2,60000.0,true);
+            Apartamento imoveles = new Apartamento(endereco3,30000.0,5);
+            Casa imovelrj = new Casa(endereco4,990000.0,false);
+            Casa imovelsc = new Casa(endereco5,2000001.0,true);
 
             opcoesParaFinanciamento.registrarImovel(imovelrs);
             opcoesParaFinanciamento.registrarImovel(imoveles);

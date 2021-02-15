@@ -1,12 +1,14 @@
-public class Imovel {
+public abstract class Imovel {
 
     private Endereco endereco;
-    private Double valor;
+    private double valor;
 
-    public Imovel(Endereco endereco, Double valor) {
+    public Imovel(Endereco endereco, double valor) {
         this.endereco = endereco;
         this.valor = valor;
     }
+
+    public abstract String apresentacao();
 
     public Endereco getEndereco() {
         return this.endereco;
@@ -16,8 +18,10 @@ public class Imovel {
         return this.valor;
     }
 
-    public String apresentacao(){
+
+
+    /*public String apresentacao(){
         return "O endereço é "+this.endereco.getLogradouro()+", "+this.endereco.getNumero()+" - "
                 +this.endereco.getCidade()+" / "+this.endereco.getEstado()+" e o valor é R$ "+this.valor+".";
-    }
+    }*/
 }
