@@ -9,5 +9,10 @@ public class Diretor extends Pessoa {
         this.quantidadeFilmesDirigidos = quantidadeFilmesDirigidos;
         }
 
+    public void imprimirInformacoes(){
+        super.imprimirInformacoes();
+        System.out.println("Quantidade de filmes dirigidos: "+this.quantidadeFilmesDirigidos);
     }
+
+}
 

@@ -1,4 +1,4 @@
-package exercicio.um;
+/*package exercicio.um;
 
 public class AplicacaoExFilmes {
     public static void main(String[] args) {
@@ -15,4 +15,4 @@ public class AplicacaoExFilmes {
         filme2.reproduzirFilme();
 
     }
-}
+}*/

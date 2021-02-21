@@ -8,4 +8,9 @@ public class Ator extends Pessoa{
         this.quantidadeDeOscar = quantidadeDeOscar;
     }
 
+    public void imprimirInformacoes(){
+        super.imprimirInformacoes();
+        System.out.println("Quantidade de oscars vencidos: "+this.quantidadeDeOscar);
+    }
+
 }

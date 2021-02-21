@@ -1,5 +1,7 @@
 package exercicio.um;
 
+import java.util.List;
+
 public class Filme {
 
     private String nomeFilme;
@@ -9,8 +11,10 @@ public class Filme {
     private int avaliacao;
     private Diretor diretor;
     private Ator ator;
+    private List<Pessoa> elenco;
 
-    public Filme(String nomeFilme, String descricao, int tempoDuracao, int anoLancamento, int avaliacao, Diretor diretor) {
+    public Filme(String nomeFilme, String descricao, int tempoDuracao, int anoLancamento, int avaliacao,
+                 Diretor diretor, List<Pessoa> elenco) {
 
         this.nomeFilme = nomeFilme;
         this.descricao = descricao;
@@ -18,6 +22,7 @@ public class Filme {
         this.anoLancamento = anoLancamento;
         this.diretor = diretor;
         this.ator = ator;
+        this.elenco = elenco;
         defineAvaliacao(avaliacao);
         validaNomeEDefineAvaliacao(nomeFilme);
     }
@@ -45,4 +50,12 @@ public class Filme {
             this.avaliacao = 5;
         }
     }
+
+    public void exibirCreditos(){
+        System.out.println("Veja o elenco do Filme: "+this.nomeFilme);
+        for (Pessoa pessoa : elenco){
+            pessoa.imprimirInformacoes();
+        }
+    }
+
 }
