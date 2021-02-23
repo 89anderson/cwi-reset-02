@@ -16,7 +16,7 @@ public class ContaPoupanca extends TiposDeConta{
     }
 
     @Override
-    public String toString() {
+    public String contaApresentacao() {
         return "Conta Poupança: "+getInstituicaoBancaria().getDescricao()+", "+getContaBancaria();
     }
 

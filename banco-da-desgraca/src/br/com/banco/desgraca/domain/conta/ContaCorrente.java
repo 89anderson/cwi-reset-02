@@ -2,8 +2,6 @@ package br.com.banco.desgraca.domain.conta;
 
 import br.com.banco.desgraca.domain.InstituicaoBancaria;
 
-import java.time.LocalDate;
-
 public class ContaCorrente extends TiposDeConta{
 
 
@@ -12,7 +10,7 @@ public class ContaCorrente extends TiposDeConta{
     }
 
     @Override
-    public String toString() {
+    public String contaApresentacao() {
         return "Conta Corrente: "+getInstituicaoBancaria().getDescricao()+", "+getContaBancaria();
     }
 

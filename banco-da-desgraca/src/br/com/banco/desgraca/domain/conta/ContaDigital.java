@@ -11,9 +11,11 @@ public class ContaDigital extends TiposDeConta{
         super(contaBancaria, banco, saldo);
     }
 
+    private void verificaConta(){
+    }
 
     @Override
-    public String toString() {
+    public String contaApresentacao() {
         return "Conta Digital: "+getInstituicaoBancaria().getDescricao()+", "+getContaBancaria();
     }
 }

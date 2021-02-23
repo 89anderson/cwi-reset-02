@@ -7,11 +7,7 @@ import java.time.LocalDate;
  */
 public final class Data {
 
-    private static LocalDate data;
-
-    private Data() {
-        data = LocalDate.of(2020, 7, 1);
-    }
+    private static LocalDate data = LocalDate.of(2020, 7, 1);
 
     /**
      * Utilize este método para obter uma data.

@@ -1,12 +1,10 @@
 package br.com.banco.desgraca.domain;
 
-import br.com.banco.desgraca.Data;
-
 import java.time.LocalDate;
 
 public class Transacao {
 
-     private LocalDate dataTransacao;
+    private LocalDate dataTransacao;
     private TipoTransacao transacao;
     private Double valor;
 
@@ -17,4 +15,15 @@ public class Transacao {
         this.valor = valor;
     }
 
+    public LocalDate getDataTransacao() {
+        return dataTransacao;
+    }
+
+    public TipoTransacao getTransacao() {
+        return transacao;
+    }
+
+    public Double getValor() {
+        return valor;
+    }
 }

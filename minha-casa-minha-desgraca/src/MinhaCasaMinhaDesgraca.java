@@ -70,7 +70,8 @@ public class MinhaCasaMinhaDesgraca {
         double valorParaPesquisa = new Scanner(System.in).nextDouble();
         Thread.sleep(500);
 
-        System.out.println("\nTá, deixa eu ver aqui o que eu tenho de opções até "+ DecimalFormat.getCurrencyInstance().format(valorParaPesquisa) +"...");
+        System.out.println("\nTá, deixa eu ver aqui o que eu tenho de opções até "+
+                DecimalFormat.getCurrencyInstance().format(valorParaPesquisa) +"...");
         Thread.sleep(new Random().nextInt(4000) + 1000);
 
         List<Imovel> opcoesViaveis = opcoesParaFinanciamento.buscarOpcoes(valorParaPesquisa);
