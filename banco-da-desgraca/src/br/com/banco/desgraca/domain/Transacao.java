@@ -1,6 +1,8 @@
 package br.com.banco.desgraca.domain;
 
+import java.text.DecimalFormat;
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 public class Transacao {
 
@@ -25,5 +27,14 @@ public class Transacao {
 
     public Double getValor() {
         return valor;
+    }
+
+    public void exibirTransacoes() {
+        String valorFormatado = DecimalFormat.getCurrencyInstance().format(valor);
+        char simboloEntradaSaida = '+';
+        if (transacao.equals(TipoTransacao.TRANSFERIR) || transacao.equals(TipoTransacao.SACAR)) {
+            simboloEntradaSaida = '-';
+        }
+        System.out.println(simboloEntradaSaida + " " + valorFormatado + " " + dataTransacao.format(DateTimeFormatter.ofPattern("dd-MM-yy")));
     }
 }

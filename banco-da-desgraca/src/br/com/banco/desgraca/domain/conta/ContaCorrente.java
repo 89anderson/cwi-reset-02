@@ -2,7 +2,7 @@ package br.com.banco.desgraca.domain.conta;
 
 import br.com.banco.desgraca.domain.InstituicaoBancaria;
 
-public class ContaCorrente extends TiposDeConta{
+public class ContaCorrente extends TiposDeContaBancaria {
 
 
     public ContaCorrente(Integer contaBancaria, InstituicaoBancaria banco, Double saldo) {

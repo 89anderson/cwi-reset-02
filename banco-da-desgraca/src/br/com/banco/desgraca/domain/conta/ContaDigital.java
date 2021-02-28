@@ -2,9 +2,7 @@ package br.com.banco.desgraca.domain.conta;
 
 import br.com.banco.desgraca.domain.InstituicaoBancaria;
 
-import java.time.LocalDate;
-
-public class ContaDigital extends TiposDeConta{
+public class ContaDigital extends TiposDeContaBancaria {
 
 
     public ContaDigital(Integer contaBancaria, InstituicaoBancaria banco, Double saldo) {

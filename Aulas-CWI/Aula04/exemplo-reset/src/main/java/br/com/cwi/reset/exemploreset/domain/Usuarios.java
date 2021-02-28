@@ -1,0 +1,33 @@
+package br.com.cwi.reset.exemploreset.domain;
+
+import java.util.Random;
+
+public class Usuarios {
+    private long id;
+    private String nome;
+    private String email;
+    private String senha;
+
+    public Usuarios(long id, String nome, String email, String senha) {
+        this.id = id;
+        this.nome = nome;
+        this.email = email;
+        this.senha = senha;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setSenha(String senha) {
+        this.senha = senha;
+    }
+}

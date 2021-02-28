@@ -1,9 +1,8 @@
 package br.com.banco.desgraca;
 
 import br.com.banco.desgraca.domain.InstituicaoBancaria;
+import br.com.banco.desgraca.domain.Transacao;
 import br.com.banco.desgraca.domain.conta.ContaCorrente;
-
-import java.text.DecimalFormat;
 
 public class BancoDaDesgraca {
 
@@ -16,7 +15,9 @@ public class BancoDaDesgraca {
         corrente1.sacar(50.00);
         corrente1.transferir(100.00,corrente2);
 
-        //corrente1.exibirExtrato(01/07/2020,16/07/2020);
+        for(Transacao transacoes : transacoes);
+
+        //corrente1.exibirExtrato(2020/07/06, 2020/07/16);
 
     }
 }
