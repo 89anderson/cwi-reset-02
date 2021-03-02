@@ -13,6 +13,7 @@ public class CriarAtorRequest {
     }
 
     public String getNome() {
+
         return nome;
     }
 

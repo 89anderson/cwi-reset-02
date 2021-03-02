@@ -19,7 +19,7 @@ public class DiretoresController implements DiretoresContract{
     @Override
     @GetMapping
     public List<DiretoresResponse> getDiretores() {
-        return diretoresService.getDiretores;
+        return diretoresService.getDiretores();
     }
 
     @Override
